@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./assets/Centauri.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MyCustomFont2';
+  src: url('./assets/Kanit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8375F3;
+  border-radius: 4px;
+}
+
+
+
+body {
+  margin: 0;
+  background-color: #0a0118;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Centauri';
+  src: url('./fonts/Centauri.otf') format('opentype');
+}
+
+body {
+  font-family: 'Centauri', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8375F3;
+  border-radius: 4px;
+}
