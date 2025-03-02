@@ -32,7 +32,7 @@ const Footer = () => {
   
 
   const handleSubscribe = () => {
-    window.location.href = "code.ai@somaiya.edu";  
+    window.location.href = "mailto:code.ai@somaiya.edu";  
   };
 
   const socialIcons = [
