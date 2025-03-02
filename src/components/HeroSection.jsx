@@ -102,10 +102,10 @@ const HeroSection = () => {
             <img
               src={teamworkIcon}
               alt="Teamwork"
-              className="w-[10vw] h-[8vh] lg:w-[5vw] lg:h-[10vh] rotate-[15deg]"
+              className="w-[20vw] h-[11vh] lg:w-[5vw] lg:h-[10vh] rotate-[15deg]"
             />
           </div>
-          <p className="text-[0.8rem] lg:text-[1.2rem] font-normal text-white absolute top-[10vh] lg:top-[15vh] cursor-default">
+          <p className="text-[0.8rem] lg:text-[1.2rem] font-normal text-white absolute top-[13vh] lg:top-[15vh] cursor-default">
             #Teamwork
           </p>
         </div>
@@ -121,10 +121,10 @@ const HeroSection = () => {
             <img
               src={webdevIcon}
               alt="Web Development"
-              className="w-[10vw] h-[8vh] lg:w-[5vw] lg:h-[10vh] rotate-[-20deg]"
+              className="w-[10vw] h-[10vh] lg:w-[5vw] lg:h-[10vh] rotate-[-20deg]"
             />
           </div>
-          <p className="text-[0.8rem] lg:text-[1.2rem] font-normal text-white absolute top-[10vh] lg:top-[15vh] cursor-default">
+          <p className="text-[0.8rem] lg:text-[1.2rem] font-normal text-white absolute top-[12vh] lg:top-[15vh] cursor-default">
             #Web <br />
             Development
           </p>
