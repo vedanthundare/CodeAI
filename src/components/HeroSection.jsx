@@ -79,7 +79,7 @@ const HeroSection = () => {
           <img
             src={arrow1}
             alt="Code image"
-            className="bottom-[18vh] lg:bottom-[25vh] absolute inline-block w-[10vw] h-[10vh] lg:w-[8vw] lg:h-[20vh] right-[15vw] lg:right-[-4vw]"
+            className="bottom-[18vh] lg:bottom-[25vh] absolute inline-block w-[10vw] h-[10vh] lg:w-[8vw] lg:h-[20vh] right-[15vw] lg:right-[28vw]"
           />
         </div>
 
@@ -87,7 +87,7 @@ const HeroSection = () => {
           <img
             src={arrow2}
             alt="arrow2"
-            className="top-[35vh] lg:top-[40vh] left-[10vw] lg:left-[0vw] absolute  w-[20vw] h-[8vh] lg:w-[15vw] lg:h-[10vh]"
+            className="top-[35vh] lg:top-[40vh] left-[10vw] lg:left-[28vw] absolute  w-[20vw] h-[8vh] lg:w-[15vw] lg:h-[10vh]"
           />
         </div>
       </div>
