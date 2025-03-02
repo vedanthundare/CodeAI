@@ -32,7 +32,7 @@ const Footer = () => {
   
 
   const handleSubscribe = () => {
-    window.location.href = "mailto:someone@example.com";  // Replace with actual API call if needed
+    window.location.href = "code.ai@somaiya.edu";  
   };
 
   const socialIcons = [
