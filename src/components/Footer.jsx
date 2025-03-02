@@ -123,7 +123,7 @@ const Footer = () => {
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.8 }} className="flex flex-col justify-center items-center">
               <h3 className="text-white text-3xl lg:text-lg font-semibold mb-4">SOCIALS</h3>
-              <div className="flex  space-x-4 ">
+              <div className="flex lg:flex-col lg:space-x-0 lg:space-y-4 space-x-4 ">
                 {socialIcons.map(({ Icon, href }, index) => (
                   <motion.a key={index} href={href} className="text-gray-400  hover:text-white" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
                     <Icon className="h-6 w-6" />
