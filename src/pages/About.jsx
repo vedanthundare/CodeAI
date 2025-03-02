@@ -19,7 +19,7 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="min-h-screen text-white p-8 ">
+    <div id="about" className="min-h-screen text-white  ">
       <Nav />
       <motion.div
         className="fixed top-0 left-0 right-0 h-2 bg-[#8375F3]"

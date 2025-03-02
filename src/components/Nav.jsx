@@ -45,7 +45,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-opacity-90 bg-[#04021a] text-white backdrop-blur-sm">
+    <nav className="fixed top-0 w-screen z-50 bg-opacity-90 bg-[#0A0118] text-white backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-8 py-5 sm:px-8 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <motion.div
@@ -56,7 +56,7 @@ const Nav = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="h-12 w-20 py-5">
+            <div className="h-12 w-20 ">
               <img src={logo} alt="Logo" className="h-8" />
             </div>
           </motion.div>
@@ -91,9 +91,9 @@ const Nav = () => {
           >
             Join Us
           </motion.button>
-          <div className="h-12 py-1 md:hidden">
+          <div className="h-12  md:hidden">
             <motion.button
-              className="md:hidden  text-white p-5 rounded-md"
+              className="md:hidden  text-white p-1  rounded-md"
               onClick={() => setIsOpen(!isOpen)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -110,13 +110,13 @@ const Nav = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 top-24 bg-[#04021a] bg-opacity-95 backdrop-blur-lg md:hidden font-custom"
+            className="fixed inset-0 top-24 bg-[#0A0118] bg-opacity-95 backdrop-blur-lg md:hidden font-custom"
             initial="closed"
             animate="open"
             exit="closed"
             variants={menuVariants}
           >
-            <div className="flex flex-col  bg-[#04021a] h-screen items-center  space-y-8">
+            <div className="flex flex-col  bg-[#0A0118] h-screen items-center  space-y-8 pt-32">
               {menuItems.map((item, index) => (
                 <motion.a
                   key={item.label}

@@ -63,7 +63,7 @@ const Footer = () => {
                 <motion.input
                   type="email"
                   placeholder="Enter Email ID"
-                  className="w-full text-center lg:w-3/4 bg-[#23024D] text-white rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_15px_5px_rgba(186,104,200,0.3)]"
+                  className="w-full text-center lg:w-3/4 bg-[#0A0118] text-white rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_15px_5px_rgba(186,104,200,0.3)]"
                   whileFocus={{ scale: 1.02 }}
                   transition={{ duration: 1 }}
                 />

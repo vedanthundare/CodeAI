@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className=" relative text-center flex mt-[0vh] lg:mt-[0vh] flex-col items-center justify-center h-screen bg-[#04021A] text-white lg:mr-20"
+      className=" relative text-center flex mt-[0vh] lg:mt-[0vh] flex-col items-center justify-center h-screen bg-[#090119] text-white lg:mr-20"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -43,7 +43,7 @@ const HeroSection = () => {
         />
       ))}
 
-      <div className="md:text-[5vw] lg:mt-[45vh] flex justify-center items-center bottom-[0vh] lg:bottom-[25vh] uppercase relative z-[20] cursor-default">
+      <div className="md:text-[5vw] lg:mt-[45vh] flex w-screen justify-center items-center bottom-[0vh] lg:bottom-[25vh] uppercase relative z-[20] cursor-default">
         <div className="flex justify-start items-center">
           <span className="text-purple-400 absolute ml-[15vw] mb-[10vh]     lg:ml-[10vw] lg:mb-[25vh]">
             <img
@@ -52,11 +52,12 @@ const HeroSection = () => {
               className="h-[5vh] lg:h-[8vh] md:h-[6vh] "
             />
           </span>
-          <div className="font-custom flex flex-col gap-[3vh] lg:gap-[5vh] ml-[15vw] mt-[10vh] lg:ml-[9vw] lg:mt-[2.5vh] text-[6vw] lg:text-[3vw]">
+          <div className="font-custom flex flex-col gap-[3vh] lg:gap-[5vh] ml-[15vw] mt-[8vh] lg:ml-[9vw] lg:mt-[2.5vh] text-[8vw] lg:text-[3vw]">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
+              className="font-custom"
             >
               Code
             </motion.h1>
@@ -78,7 +79,7 @@ const HeroSection = () => {
           <img
             src={arrow1}
             alt="Code image"
-            className="bottom-[18vh] lg:bottom-[25vh] absolute inline-block w-[10vw] h-[vh] lg:w-[8vw] lg:h-[20vh] right-[15vw] lg:right-[-4vw]"
+            className="bottom-[18vh] lg:bottom-[25vh] absolute inline-block w-[10vw] h-[10vh] lg:w-[8vw] lg:h-[20vh] right-[15vw] lg:right-[-4vw]"
           />
         </div>
 
@@ -86,13 +87,13 @@ const HeroSection = () => {
           <img
             src={arrow2}
             alt="arrow2"
-            className="top-[35vh] lg:top-[40vh] left-[2vw] lg:left-[0vw] absolute  w-[15vw] h-[8vh] lg:w-[15vw] lg:h-[10vh]"
+            className="top-[35vh] lg:top-[40vh] left-[10vw] lg:left-[0vw] absolute  w-[20vw] h-[8vh] lg:w-[15vw] lg:h-[10vh]"
           />
         </div>
       </div>
 
       <motion.div
-        className="absolute bottom-[50vh] left-[10vw] lg:bottom-[48vh] lg:left-[28vw] z-[0]"
+        className="absolute bottom-[60vh] left-[20vw] lg:bottom-[48vh] lg:left-[28vw] z-[0]"
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -111,7 +112,7 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-[15vh] right-[5vw] lg:bottom-[18vh] lg:right-[20vw] z-[20]"
+        className="absolute bottom-[5vh] right-[20vw] lg:bottom-[18vh] lg:right-[20vw] z-[20]"
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >

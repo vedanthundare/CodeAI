@@ -6,7 +6,7 @@ import Shine from "/Frame (10).png";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 bg-[#0a0118] text-center flex flex-col  justify-center">
+    <section className="py-20 bg-[#090119] text-center flex flex-col  justify-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center cursor-default">
         <motion.h2
           className="text-3xl lg:text-4xl font-bold text-white mb-8 flex justify-center"

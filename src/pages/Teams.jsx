@@ -111,7 +111,7 @@ const App = () => {
   ];
 
   return (
-    <div id="team" className="bg-[#04021B] text-white font-custom">
+    <div id="team" className="bg-[#090119] text-white font-custom">
       <Nav />
 
       <div className="text-center h-[80vh] flex flex-col justify-center mt-[10vw]">

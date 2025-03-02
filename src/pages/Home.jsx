@@ -31,7 +31,7 @@ function Home() {
   }, []);
 
   return (
-    <div id="scroll-section" className="min-h-screen w-screen bg-[#0a0118]">
+    <div id="scroll-section" className="min-h-screen w-screen bg-[#090119]">
       <Nav />
       <HeroSection />
       <EventSection />

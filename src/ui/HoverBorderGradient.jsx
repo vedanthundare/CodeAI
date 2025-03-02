@@ -45,7 +45,7 @@ const HoverBorderGradient = ({
   }, [hovered, duration]);
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-[80vh]">
       <Tag
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}

@@ -17,7 +17,7 @@ const About = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className="mt-0 py-20 bg-[#0a0118]"
+      className="mt-0 py-20 bg-[#090119]"
       id="about"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 cursor-default">
@@ -43,12 +43,11 @@ const About = () => {
         <motion.div
           id="logo"
           className="w-full flex justify-center items-center"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
+          
         >
           <img
             src={logo}
-            className="absolute lg:h-[50vw] lg:w-[100vw] h-[100vw] w-[204vw]"
+            className="absolute lg:h-[50vw] lg:w-[80vw] h-[100vw] w-screen"
             alt=""
           />
         </motion.div>
