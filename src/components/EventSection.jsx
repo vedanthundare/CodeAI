@@ -44,7 +44,7 @@ const EventSection = () => {
         >
           <h2 className="text-xl md:text-2xl font-kanit">Our</h2>
           <div className="relative inline-block">
-            <h1 className="text-4xl md:text-5xl font-custom font-bold cursor-default">
+            <h1 className="text-4xl md:text-4xl tracking-widest font-custom font-bold cursor-default">
               EVENTS
             </h1>
           </div>
@@ -90,7 +90,7 @@ const EventSection = () => {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-cardBg h-100 lg:h-64 text-white p-4 rounded-xl text-center shadow-md cursor-default"
+                  className="bg-cardBgrelative bg-white/20 backdrop-blur-lg border border-white/20 h-100 lg:h-64 text-white p-4 rounded-xl text-center shadow-md cursor-default overflow-hidden before:absolute before:top-0 before:left-[-100%] before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/40 before:to-transparent before:rotate-12 before:animate-[shineEffect_2s_infinite]"
                 >
                   <motion.img
                     src={event.src}
@@ -105,9 +105,19 @@ const EventSection = () => {
           </Swiper>
         </div>
       </div>
-      <div className="flex justify-center items-center font-custom  font-bold lg:text-5xl mt-48 lg:mt-64">
-        <h1>Upcoming event</h1>
-      </div>
+      <div className="flex justify-center items-center font-custom font-extrabold text-3xl lg:text-5xl mt-32 lg:mt-64">
+  <motion.h1
+    className="text-white drop-shadow-lg text-center"
+    initial={{ opacity: 0, x: -100 }} 
+    whileInView={{ opacity: 1, x: 0 }} 
+    viewport={{ once: true }} 
+    transition={{ duration: 1, ease: "easeOut" }} 
+  >
+    Upcoming Event
+  </motion.h1>
+</div>
+
+
       <HoverBorderGradient />
     </div>
   );

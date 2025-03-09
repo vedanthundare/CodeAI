@@ -45,17 +45,13 @@ const Footer = () => {
 
   return (
     <footer
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-      className="bg-[#0a0118] py-12 relative overflow-hidden"
+    
+      className=" py-12 relative overflow-hidden  before:content-[''] before:absolute before:inset-x-0 before:bottom-0 before:h-[20%] lg:before:h-[50%] before:w-full before:bg-gradient-to-b before:from-transparent before:to-[#40368f] before:opacity-50"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 cursor-default">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 cursor-default ">
+
         <div className="flex flex-col lg:flex-row items-center w-full justify-center font-custom2">
-          <div className="w-1/2 lg:mt-20">
+          <div className="w-1/2 lg:mb-20">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +63,11 @@ const Footer = () => {
               </h3>
               <div className="relative lg:flex lg:justify-center">
                 {/* Email Input & Submit Button */}
+<<<<<<< HEAD
                 <div className="flex items-center bg-[#0A0118] rounded-full shadow-[0_0_15px_5px_rgba(186,104,200,0.3)]">
+=======
+                <div className="flex items-center rounded-full shadow-[0_0_15px_5px_rgba(186,104,200,0.3)]">
+>>>>>>> 941f77e (Updated website code)
                   <motion.input
                     type="email"
                     placeholder="Enter Email ID"
@@ -97,7 +97,7 @@ const Footer = () => {
             </motion.div>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-start items-center text-center mt-40 gap-10 w-1/2 justify-around">
+          <div className="flex flex-col lg:flex-row lg:items-start items-center text-center mt-10 gap-10 w-1/2 justify-around">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
               <h3 className="text-white text-3xl lg:text-lg font-semibold mb-4">BROWSE</h3>
               <ul className="space-y-2">
@@ -153,8 +153,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <motion.div className="flex justify-center mt-10" initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 2, delay: 0.5 }}>
-          <img src={Logo} className="h-[40vw] w-screen" alt="" />
+        <motion.div className="flex justify-center " initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 2, delay: 0.5 }}>
+          <img src={Logo} className="h-[40vw] w-[80vw] lg:h-[20vw] lg:w-[60vw]" alt="" />
         </motion.div>
       </div>
     </footer>

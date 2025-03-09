@@ -24,6 +24,22 @@
   src: url('../assets/Fonts/Centauri.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'MyCustomFont4';
+  src: url('./assets/Fonts/NeutronsDemoRegular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MyCustomFont5';
+  src: url('./assets/Fonts/Kanit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyCustomFont6';
+  src: url('./assets/Fonts/helvetica-light.ttf') format('truetype');
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

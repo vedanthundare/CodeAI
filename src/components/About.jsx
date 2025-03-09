@@ -6,7 +6,7 @@ import Round from "/Frame (6).png";
 import Share from "/Frame (7).png";
 import Flag from "/Frame (8).png";
 import bgImage from "/Desktop - 10.png";
-import logo from "/logo (2).png";
+import logo from "/Group.png";
 
 const About = () => {
   return (
@@ -22,45 +22,42 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 cursor-default">
         <motion.h2
-          className="lg:text-3xl text-xl font-light font-custom2 text-white mb-[10vw] lg:mb-[3vw] text-center"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        >
-          What is <br />
-          <p className="text-white font-custom flex justify-center text-[8vw] lg:text-[3vw] pt-6">
-            <img src={Spark} className="h-5 w-5 lg:pb-1" alt="" />
-            CODEAI
-            <img
-              src={Down}
-              className="h-20 w-7 ml-2 lg:h-20 lg:w-24 lg:ml-2"
-              alt=""
-            />
-          </p>
-        </motion.h2>
+  className="lg:text-3xl relative text-xl font-light font-custom2 text-white mb-[10vw] lg:mb-[3vw] text-center z-50"
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }} 
+  transition={{ duration: 1 }}
+>
+  What is <br />
+  <span className="text-white font-custom flex justify-center text-[8vw] lg:text-[3vw] pt-6">
+    <img src={Spark} className="h-5 w-5 lg:pb-1" alt="" />
+    CODEAI
+    <img src={Down} className="h-20 w-7 ml-2 lg:h-20 lg:w-24 lg:ml-2" alt="" />
+  </span>
+</motion.h2>
+
 
         <motion.div
           id="logo"
           className="w-full flex justify-center items-center"
-          
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 5, ease: "linear" }} // Infinite smooth rotation
         >
           <img
             src={logo}
-            className="absolute lg:h-[50vw] lg:w-[80vw] h-[100vw] w-screen"
-            alt=""
+            className="absolute lg:h-[10vw] lg:w-[15vw] h-[30vw] w-[35vw]"
+            alt="logo"
           />
         </motion.div>
 
         <motion.div
-          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg backdrop-blur-sm"
+          className=" bg-white/20 border border-white/20 p-8 rounded-lg backdrop-blur-sm"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
           <motion.p
-            className="text-gray-300 leading-relaxed mb-8 text-center lg:text-start lg:mx-10 text-[1rem] lg:text-[1.2rem] font-custom2"
+            className="text-white leading-relaxed mb-8 text-center lg:text-start lg:mx-10 text-[1rem] lg:text-[1.2rem] font-custom2"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -92,7 +89,7 @@ const About = () => {
           </motion.h3>
 
           <motion.p
-            className="text-gray-300 leading-relaxed mb-8 text-center lg:text-start lg:mx-10 text-[1rem] lg:text-[1.2rem] font-custom2"
+            className="text-white leading-relaxed mb-8 text-center lg:text-start lg:mx-10 text-[1rem] lg:text-[1.2rem] font-custom2"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -124,7 +121,7 @@ const About = () => {
           </motion.h3>
 
           <motion.p
-            className="text-gray-300 leading-relaxed text-center lg:text-start lg:mx-10 text-[1rem] lg:text-[1.2rem] font-custom2"
+            className="text-white leading-relaxed text-center lg:text-start lg:mx-10 text-[1rem] lg:text-[1.2rem] font-custom2"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}

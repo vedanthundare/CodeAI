@@ -46,6 +46,7 @@ const HoverBorderGradient = ({
 
   return (
     <div className="flex justify-center items-center h-[80vh]">
+    
       <Tag
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -58,7 +59,7 @@ const HoverBorderGradient = ({
         )}
         {...props}
       >
-        <div className={cn("text-center z-10 bg-transparent", className)} style={{ fontFamily: 'MyCustomFont', color: '#B2ABF7' }}>
+        <div className={cn("text-center tracking-widest z-10 bg-transparent", className)} style={{ fontFamily: 'MyCustomFont', color: '#B2ABF7' }}>
           {children}
         </div>
         <motion.div
@@ -75,6 +76,7 @@ const HoverBorderGradient = ({
           }}
           transition={{ ease: "linear", duration: duration ?? 1 }}
         />
+        
         <div className="bg-[#04021A] absolute inset-[2px] rounded-lg" />
       </Tag>
     </div>

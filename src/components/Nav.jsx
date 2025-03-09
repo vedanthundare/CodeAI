@@ -35,7 +35,11 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+<<<<<<< HEAD
     <nav className="fixed top-0 w-screen z-50 bg-opacity-90 bg-[#0A0118] text-white backdrop-blur-sm">
+=======
+    <nav className="fixed top-0 w-screen z-50 h-[10%] bg-opacity-90 bg-[#0A0118] text-white backdrop-blur-sm">
+>>>>>>> 941f77e (Updated website code)
       <div className="max-w-7xl mx-auto px-8 py-5 sm:px-8 lg:px-[0]">
         <div className="flex justify-between items-center h-16">
   

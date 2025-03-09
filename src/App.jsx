@@ -6,6 +6,9 @@ import Teams from "./pages/Teams"
 import Footer from "./components/Footer"
 
 function App() {
+
+    
+
   return (
     <Router>
    <div id="scroll-section" className="min-h-screen bg-[#0a0118]">

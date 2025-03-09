@@ -3,6 +3,7 @@ import TeamSection from "../components/TeamSection";
 import Carousel from "../components/Carousel";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Particle from "../components/Particle";
 
 const App = () => {
   const coreMembers = [
@@ -111,18 +112,19 @@ const App = () => {
   ];
 
   return (
-    <div id="team" className="bg-[#090119] text-white font-custom">
+    <div id="team" className="bg-[#090119] text-white font-custom relative">
+      <Particle />
       <Nav />
 
-      <div className="text-center h-[80vh] flex flex-col justify-center mt-[10vw]">
-        <h1 className="text-4xl font-bold mt-32">BRAINS BEHIND</h1>
+      {/* Heading Section */}
+      <div className="text-center h-[80vh] flex flex-col justify-center relative z-10">
+        <h1 className="text-4xl font-bold mt-20">BRAINS BEHIND</h1>
         <h1 className="text-4xl font-bold mt-4">THE CODE</h1>
-        <p className="text-xl font-custom3 mt-64">
-          Be greater, be greater together
-        </p>
+        <p className="text-xl font-custom2 mt-16">Be greater, be greater together</p>
       </div>
 
-      <main className="text-center">
+      <main className="text-center relative z-10">
+        {/* Core Team Section */}
         <div className="mt-24">
           <h1 id="core" className="text-3xl font-bold">
             Core <span className="text-fuchsia-400">Minds</span>
@@ -130,6 +132,7 @@ const App = () => {
           <TeamSection members={coreMembers} />
         </div>
 
+        {/* Subcore Team Section */}
         <div className="mt-24">
           <h1 id="subcore" className="text-3xl font-bold">
             SUBCORE <span className="text-fuchsia-400">HEROES</span>
@@ -137,6 +140,7 @@ const App = () => {
           <TeamSection members={subcoreMembers} />
         </div>
 
+        {/* Carousel Section */}
         <div className="mt-24">
           <h1 id="members" className="text-3xl font-bold">
             Team <span className="text-fuchsia-400">Members</span>
@@ -144,6 +148,7 @@ const App = () => {
           <Carousel slides={slides} />
         </div>
       </main>
+
       <Footer />
     </div>
   );
