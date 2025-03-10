@@ -4,6 +4,9 @@ import Carousel from "../components/Carousel";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Particle from "../components/Particle";
+import crown from "/crown.png";
+import lines from "/lines.png";
+import excla from "/excla.png";
 
 const App = () => {
   const coreMembers = [
@@ -118,9 +121,28 @@ const App = () => {
 
       {/* Heading Section */}
       <div className="text-center h-[80vh] flex flex-col justify-center relative z-10">
+        <span className=" absolute ml-[14vw] mb-[19vh] lg:ml-[34vw] lg:mb-[16vh]">
+          <img
+            src={crown}
+            alt="crown"
+            className="h-[5vh] lg:h-[6vh] md:h-[4vh]"
+          />
+        </span>
         <h1 className="text-4xl font-bold mt-20">BRAINS BEHIND</h1>
         <h1 className="text-4xl font-bold mt-4">THE CODE</h1>
-        <p className="text-xl font-custom2 mt-16">Be greater, be greater together</p>
+        <img
+          src={lines}
+          alt="lines"
+          className="absolute inline-block h-[4vh] lg:h-[5vh] lg:w-[6vh] right-[1vw] lg:right-[33vw] bottom-[36vh] lg:top-[31vh]"
+        />
+        <img
+          src={excla}
+          alt="exclamation mark"
+          className="absolute h-[6vh] lg:h-[7vh] right-[10vw] lg:right-[40vw] bottom-[22vh] lg:bottom-[22vh]"
+        />
+        <p className="text-xl font-custom2 mt-16">
+          Be greater, be greater together
+        </p>
       </div>
 
       <main className="text-center relative z-10">
