@@ -39,7 +39,7 @@ const HeroSection = () => {
       <div className="md:text-[5vw] lg:mt-[45vh] flex w-screen justify-center items-center bottom-[0vh] lg:bottom-[25vh] uppercase relative z-[20] cursor-default">
         <div className="flex justify-start items-center">
           <motion.span
-            className="text-purple-400 absolute ml-[20%] mb-[45%] lg:ml-[10vw] lg:mb-[35vh]"
+            className="text-purple-400 absolute ml-[5%] mb-[55%] lg:ml-[10vw] lg:mb-[35vh]"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <img src={hastag} alt="Hashtag" className="h-[5vh] lg:h-[8vh] md:h-[6vh]" />
           </motion.span>
 
-          <div className="font-custom flex flex-col font-thin tracking-wider gap-[3vh] lg:gap-[5vh] ml-[15vw] mb-[10vh] lg:ml-[9vw] lg:mt-[2.5vh] text-[8vw] lg:text-[3vw]">
+          <div className="font-custom flex flex-col font-thin tracking-wider gap-[3vh] lg:gap-[5vh] ml-[0vw] mb-[10vh] lg:ml-[9vw] lg:mt-[2.5vh] text-[8vw] lg:text-[3vw]">
             <motion.h1 initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
               Code
             </motion.h1>
