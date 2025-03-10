@@ -45,6 +45,9 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation(); // Get current path
   const currentPath = location.pathname;
+  const glowEffectStyle = {
+    boxShadow: "0px 0px 10px 2px rgba(236, 39, 213, 0.5)",
+  };
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-opacity-90 bg-[#04021a] text-white backdrop-blur-sm">
@@ -87,6 +90,7 @@ const Nav = () => {
           </div>
           <motion.button
             className="hidden md:block font-custom border border-[#EC27D5] px-6 py-2 rounded-full hover:bg-[#EC27D5] transition text-xs"
+            style={glowEffectStyle}
             whileHover={{ scale: 1.05, backgroundColor: "#EC27D5" }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: -20 }}
@@ -142,6 +146,7 @@ const Nav = () => {
                 variants={menuItemVariants}
                 custom={4}
                 transition={{ delay: menuItems.length * 0.01, duration: 1 }}
+                style={glowEffectStyle}
               >
                 Join Us
               </motion.button>
