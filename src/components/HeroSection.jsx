@@ -86,7 +86,7 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
       >
         <div className="bg-white/20 p-5 backdrop-blur-md rounded-[2vw] lg:p-[1vw] w-[24vw] h-[20vh] lg:w-[10vw] lg:h-[25vh] flex flex-col items-center justify-center text-center rotate-[-20deg]">
-          <img src={teamworkIcon} alt="Teamwork" className="w-[10vw] h-[8vh] lg:w-[5vw] lg:h-[10vh] rotate-[15deg]" />
+          <img src={teamworkIcon} alt="Teamwork" className="w-[10vw] h-[8vh] lg:w-[5vw] lg:h-[10vh] rotate-[15deg] mb-5 lg:mb-10" />
           <p className="text-[0.8rem] lg:text-[1.2rem] font-custom2 text-white absolute top-[13vh] lg:top-[15vh] cursor-default">
             #Teamwork
           </p>
@@ -100,7 +100,7 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
       >
         <div className="bg-white/20 backdrop-blur-md rounded-[2vw] p-[1vw] w-[24vw] h-[20vh] lg:w-[10vw] lg:h-[25vh] flex flex-col items-center justify-center text-center rotate-[20deg]">
-          <img src={webdevIcon} alt="Web Development" className="w-[10vw] h-[8vh] lg:w-[5vw] lg:h-[10vh] rotate-[-20deg]" />
+          <img src={webdevIcon} alt="Web Development" className="w-[10vw] h-[8vh] lg:w-[5vw] lg:h-[10vh] rotate-[-20deg] mb-5 lg:mb-10" />
           <p className="text-[0.8rem] lg:text-[1.2rem] font-custom2 text-white absolute top-[12vh] lg:top-[15vh] cursor-default">
             #Web <br /> Development
           </p>
