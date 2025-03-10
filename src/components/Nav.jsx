@@ -10,39 +10,22 @@ const menuItems = [
 ];
 
 const menuVariants = {
-  closed: {
-    opacity: 0,
-    x: "100%",
-    transition: { duration: 0.3, ease: "easeInOut" },
-  },
-  open: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.3, ease: "easeInOut" },
-  },
+  closed: { opacity: 0, x: "100%", transition: { duration: 0.3, ease: "easeInOut" } },
+  open: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeInOut" } },
 };
 
 const menuItemVariants = {
   closed: { x: 50, opacity: 0 },
-  open: (i) => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: i * 0.1, duration: 0.3 },
-  }),
+  open: (i) => ({ x: 0, opacity: 1, transition: { delay: i * 0.1, duration: 0.3 } }),
 };
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-<<<<<<< HEAD
     <nav className="fixed top-0 w-screen z-50 bg-opacity-90 bg-[#0A0118] text-white backdrop-blur-sm">
-=======
-    <nav className="fixed top-0 w-screen z-50 h-[10%] bg-opacity-90 bg-[#0A0118] text-white backdrop-blur-sm">
->>>>>>> 941f77e (Updated website code)
       <div className="max-w-7xl mx-auto px-8 py-5 sm:px-8 lg:px-[0]">
         <div className="flex justify-between items-center h-16">
-  
           <motion.div
             className="text-xl font-bold"
             whileHover={{ scale: 1.1 }}
@@ -59,12 +42,7 @@ const Nav = () => {
           <div className="hidden md:block">
             <ul className="flex space-x-8 uppercase text-sm">
               {menuItems.map((item, index) => (
-                <motion.li
-                  key={item.label}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.3, duration: 2 }}
-                >
+                <motion.li key={item.label} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.3, duration: 2 }}>
                   <motion.a
                     href={item.href}
                     className="font-custom px-4 py-2 border-2 border-transparent text-xs rounded-full transition-all cursor-pointer hover:bg-white hover:text-black hover:transition-colors hover:duration-300"
