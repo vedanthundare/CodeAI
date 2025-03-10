@@ -53,13 +53,13 @@ const EventSection = () => {
         <div className="relative w-full md:w-2/3">
           <button
             ref={prevRef}
-            className="absolute top-1/2 left-[-2vw] z-10 transform -translate-y-1/2"
+            className="absolute hidden md:block top-1/2 left-[-2vw] z-10 transform -translate-y-1/2"
           >
             <ChevronLeft className="text-white w-8 h-8" />
           </button>
           <button
             ref={nextRef}
-            className="absolute top-1/2 right-[-2vw] z-10 transform -translate-y-1/2"
+            className="absolute hidden md:block top-1/2 right-[-2vw] z-10 transform -translate-y-1/2"
           >
             <ChevronRight className="text-white w-8 h-8" />
           </button>
@@ -106,17 +106,16 @@ const EventSection = () => {
         </div>
       </div>
       <div className="flex justify-center items-center font-custom font-extrabold text-3xl lg:text-5xl mt-32 lg:mt-64">
-  <motion.h1
-    className="text-white drop-shadow-lg text-center"
-    initial={{ opacity: 0, x: -100 }} 
-    whileInView={{ opacity: 1, x: 0 }} 
-    viewport={{ once: true }} 
-    transition={{ duration: 1, ease: "easeOut" }} 
-  >
-    Upcoming Event
-  </motion.h1>
-</div>
-
+        <motion.h1
+          className="text-white drop-shadow-lg text-center"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          Upcoming Event
+        </motion.h1>
+      </div>
 
       <HoverBorderGradient />
     </div>
