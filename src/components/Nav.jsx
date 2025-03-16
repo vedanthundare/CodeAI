@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "/Group.png";
-import { useLocation } from "react-router-dom"; // Import useLocation from react-router-dom
+import { useLocation } from "react-router-dom";
 
 const menuItems = [
   { href: "/", label: "HOME" },
@@ -43,10 +43,14 @@ const menuItemVariants = {
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Get current path
+  const location = useLocation();
   const currentPath = location.pathname;
   const glowEffectStyle = {
     boxShadow: "0px 0px 10px 2px rgba(236, 39, 213, 0.5)",
+  };
+
+  const handleJoinUsClick = () => {
+    window.location.href = "https://forms.gle/F21W6DfNRv4ULwRL6";
   };
 
   return (
@@ -96,6 +100,7 @@ const Nav = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: menuItems.length * 0.01, duration: [0.2] }}
+            onClick={handleJoinUsClick}
           >
             Join Us
           </motion.button>
@@ -147,6 +152,7 @@ const Nav = () => {
                 custom={4}
                 transition={{ delay: menuItems.length * 0.01, duration: 1 }}
                 style={glowEffectStyle}
+                onClick={handleJoinUsClick}
               >
                 Join Us
               </motion.button>
