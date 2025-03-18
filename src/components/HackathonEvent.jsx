@@ -107,7 +107,7 @@ const HackathonEvent = () => {
 
                     <motion.div
                         className="w-full lg:w-1/2 space-y-6"
-                        initial={{ opacity: 0, x: 100 }}
+                        initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, ease: "easeOut" }}
