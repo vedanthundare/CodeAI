@@ -7,6 +7,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import bgImage from "/Desktop - 10.png";
 import HoverBorderGradient from "../ui/HoverBorderGradient";
+import HackathonEvent from "./HackathonEvent";
 
 const eventData = [
   { src: "/event1.JPG", name: "App Developement" },
@@ -105,7 +106,7 @@ const EventSection = () => {
           </Swiper>
         </div>
       </div>
-      <div className="flex justify-center items-center font-custom font-extrabold text-3xl lg:text-5xl mt-32 lg:mt-64">
+      {/* <div className="flex justify-center items-center font-custom font-extrabold text-3xl lg:text-5xl mt-32 lg:mt-64">
         <motion.h1
           className="text-white drop-shadow-lg text-center"
           initial={{ opacity: 0, x: -100 }}
@@ -115,9 +116,10 @@ const EventSection = () => {
         >
           Upcoming Event
         </motion.h1>
-      </div>
+      </div> */}
+      <HackathonEvent />
 
-      <HoverBorderGradient />
+      {/* <HoverBorderGradient /> */}
     </div>
   );
 };
