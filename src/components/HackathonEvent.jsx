@@ -18,7 +18,7 @@ const HackathonEvent = () => {
     };
 
     useEffect(() => {
-        const eventDate = new Date("2025-04-05T14:00:00").getTime();
+        const eventDate = new Date("2025-04-05T13:30:00").getTime();
 
         const timer = setInterval(() => {
             const now = new Date().getTime();
