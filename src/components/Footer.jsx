@@ -87,7 +87,7 @@ const Footer = () => {
             </motion.div>
           </div>
         </div>
-        <motion.div className="flex justify-center" initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 2, delay: 0.5 }}>
+        <motion.div className="flex justify-center align-center" initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 2, delay: 0.5 }}>
           <img src={Logo} className="h-[40vw] w-[80vw] lg:h-[20vw] lg:w-[60vw]" alt="Logo" />
         </motion.div>
       </div>

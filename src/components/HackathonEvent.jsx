@@ -61,20 +61,35 @@ const HackathonEvent = () => {
         >
             {/* Header Section */}
             <motion.div
-                className="flex justify-center items-center font-custom font-extrabold text-3xl lg:text-5xl mt-32 lg:mt-64"
+                className="flex justify-center items-center font-custom font-extrabold text-4xl lg:text-6xl mt-24 lg:mt-48"
                 initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
                 <motion.h1
-                    className="text-white drop-shadow-lg text-center text-2xl md:text-4xl"
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                    className="text-white drop-shadow-lg text-center text-2xl md:text-4xl relative"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
                 >
-                    &lt; Level-Up &gt;
+                    <motion.span
+                        initial={{ x: -30 }}
+                        animate={{ x: 0 }}
+                        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                        className="inline-block animate-pulse"
+                    >
+                        &lt;
+                    </motion.span>
+                    <span className="mx-2 animate-pulse">LEVEL-UP</span>
+                    <motion.span
+                        initial={{ x: 30 }}
+                        animate={{ x: 0 }}
+                        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                        className="inline-block animate-pulse"
+                    >
+                        &gt;
+                    </motion.span>
                 </motion.h1>
             </motion.div>
 
@@ -118,15 +133,15 @@ const HackathonEvent = () => {
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 1, ease: "easeOut" }}
                         >
-                            Join us for an exciting hackathon challenge where innovation meets execution.
+                            Join us for an exciting <span style={{ color: "#EC27D5" }}>24-hour</span> hackathon challenge where innovation meets execution.
                         </motion.p>
-                        <p>
+                        <p className="text-lg lg:text-xl">
                             <strong>Date:</strong> 5th & 6th April 2025
                         </p>
                         {/* <p>
                             <strong>Time:</strong> 10:00 AM - 5:00 PM
                         </p> */}
-                        <p>
+                        <p className="text-lg lg:text-xl">
                             <strong>Venue:</strong> KJSIT Campus
                         </p>
                         <div className="mt-6">
@@ -155,6 +170,15 @@ const HackathonEvent = () => {
             </motion.section>
 
             {/* Timer Section */}
+            <motion.div
+                className="text-center pt-16"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, ease: "easeOut" }}
+            >
+                <h2 className="text-2xl font-bold">Hackathon starts in</h2>
+            </motion.div>
             <motion.div
                 className="flex justify-center items-center py-12"
                 initial={{ opacity: 0, y: 50 }}
@@ -192,6 +216,47 @@ const HackathonEvent = () => {
                     ))}
                 </div>
             </motion.div>
+
+            {/* About LEVEL-UP Section */}
+            <motion.section
+                className="p-4 lg:p-8 space-y-8 mb-8 text-justify"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, ease: "easeOut" }}
+            >
+                <h2 className="text-3xl animate-pulse font-custom font-extrabold text-center">About</h2>
+                <h2 className="text-3xl animate-pulse font-custom font-extrabold text-center">LEVEL-UP</h2>
+                <p className="text-lg">
+                    <span style={{ color: "#EC27D5" }}>LEVEL-UP</span> is a <span style={{ color: "#EC27D5" }}>24-hour</span> AI-focused hackathon by <span style={{ color: "#EC27D5" }}>CodeAI x IETE</span>, centered around the theme <span style={{ color: "#EC27D5" }}>&quot;Future Innovation&quot;</span>. Teams of <span style={{ color: "#EC27D5" }}>2-4 members</span> will tackle real-world challenges in <b>healthcare, education, and environmental sustainability</b>, developing AI-driven solutions using provided tools, APIs, and datasets. Projects will be judged on <span style={{ color: "#EC27D5" }}>innovation, technical complexity, impact, and presentation</span>. Top teams will receive <b>cash prizes, opportunities with CodeAI, and participation certificates.</b>
+                </p>
+            </motion.section>
+
+            {/* Domains Section */}
+            <motion.section
+                className="p-4"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, ease: "easeOut" }}
+            >
+                <h2 className="text-3xl font-bold text-center animate-pulse font-custom font-extrabold">Domains</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+                    {["IOT & Embedded Systems", "AI & ML", "WEB / APP Development", "FINTECH / LEGAL TECH", "GAME TECH", "CYBERSECURITY / BLOCKCHAIN"].map((domain, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            whileHover={{ scale: 1.05 }}
+                        >
+                            <div className="flex justify-center items-center flex-wrap p-6 rounded-lg shadow-lg text-center bg-cardBgrelative bg-white/20">
+                                <h3 className="text-xl font-bold">{domain}</h3>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </motion.section>
         </motion.div>
     );
 };
