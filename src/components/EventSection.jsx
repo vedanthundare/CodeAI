@@ -33,9 +33,11 @@ const EventSection = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className="bg-darkPurple text-white py-20 px-6 md:px-16 lg:px-36"
+      className="bg-darkPurple text-white pb-20 px-6 md:px-16 lg:px-36"
     >
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 ">
+      <HackathonEvent />
+
+      <div className="mt-32 flex flex-col md:flex-row items-center justify-between gap-8 ">
         <motion.div
           className="text-center md:text-left w-full md:w-1/3 relative cursor-default z-10"
           initial={{ opacity: 0, x: -50 }}
@@ -117,7 +119,8 @@ const EventSection = () => {
           Upcoming Event
         </motion.h1>
       </div> */}
-      <HackathonEvent />
+
+      
 
       {/* <HoverBorderGradient /> */}
     </div>

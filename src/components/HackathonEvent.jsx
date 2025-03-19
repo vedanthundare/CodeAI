@@ -58,7 +58,8 @@ const HackathonEvent = () => {
         <>
             <motion.div
                 className="bg-gradient-to-br from-gray-900 to-gray-800 text-white"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
